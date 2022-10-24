@@ -4,8 +4,25 @@ h1{color:grey;font-family:verdana}
 .maindiv {
     background-color:white;
     color:black;
-    width:300px;
+    width:350px;
     padding:20px;
     border-radius:25px;
     box-align:center;
+}
+
+label.field{
+text-align:right;
+	width:100px;
+	float:left;
+}
+input {
+  height: 20px;
+  flex: 0 0 100px;
+  margin-left: 10px;
+}
+
+select {
+   height: 20px;
+  flex: 0 0 100px;
+  margin-left: 10px;
 }

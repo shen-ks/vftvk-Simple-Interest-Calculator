@@ -1,9 +1,9 @@
-
 function compute()
 {
     var principal = document.getElementById("principal").value;
     if (principal<=0) { //checks for value greater than 0, and resets focus if not a positive number
         alert("Enter a positive number");
+		document.getElementById("principal").reset();
         document.getElementById("principal").focus();
     }
     else{
@@ -16,6 +16,7 @@ function compute()
 //displays the calculated results and span tag is used to highlight specific values
         document.getElementById("result").innerHTML = "<b>If</b> you deposit <span style=\"background-color: #FFFF00\">" + principal + " </span>, <br> <b>at</b> an interest rate of <span style=\"background-color: #FFFF00\">" + rate +"% </span> <br> <b>You</b> will receive an amount of <span style=\"background-color: #FFFF00\">" + interest + "</span>,<br> <b>in </b> the year <span style=\"background-color: #FFFF00\">" + year + "</span>";
     }
+	return false;
 }
 
 function updateRate()
