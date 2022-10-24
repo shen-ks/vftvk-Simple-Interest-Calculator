@@ -14,7 +14,7 @@ function compute()
     var year = new Date().getFullYear() + parseInt(years); 
 
 //displays the calculated results and span tag is used to highlight specific values
-        document.getElementById("result").innerHTML = "<b>If</b> you deposit <span style=\"background-color: #FFFF00\">" + principal + " </span>, <br> <b>at</b> an interest rate of <span style=\"background-color: #FFFF00\">" + rate +"% </span> <br> <b>You</b> will receive an amount of <span style=\"background-color: #FFFF00\">" + interest + "</span>,<br> <b>in </b> the year <span style=\"background-color: #FFFF00\">" + year + "</span>";
+        document.getElementById("result").innerHTML = "<b>If</b> you deposit <span style=\"background-color: #FFFF00\">" + principal + " $</span>, <br> <b>at</b> an interest rate of <span style=\"background-color: #FFFF00\">" + rate +"% </span> <br> <b>You</b> will receive an amount of <span style=\"background-color: #FFFF00\">" + interest + "</span>,<br> <b>in </b> the year <span style=\"background-color: #FFFF00\">" + year + "</span>";
     }
 	return false;
 }
